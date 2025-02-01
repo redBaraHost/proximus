@@ -4,6 +4,5 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static("PROX")); 
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+app.listen(process.env.PORT || 8080, "0.0.0.0");
+
